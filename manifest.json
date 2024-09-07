@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Grab Scroll",
+    "version": "1.0",
+    "description": "Allows you to scroll through websites with the Spacebar + Hold click gesture. Just as you explore the canvas in figma or photoshop",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
